@@ -1,0 +1,33 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "yoavbls.pretty-ts-errors",
+    "SonarSource.sonarlint-vscode",
+    "steoates.autoimport",
+    "pmneo.tsimporter",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "VisualStudioExptTeam.intellicode-api-usage-examples",
+    "wix.vscode-import-cost",
+    "jasonnutter.search-node-modules",
+    "avneeshagarwal.react-nextjs-snippets",
+    "infeng.vscode-react-typescript",
+    "anbuselvanrocky.primeflex-snippets",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "pranaygp.vscode-css-peek",
+    "anseki.vscode-color",
+    "kamikillerto.vscode-colorize",
+    "kisstkondoros.vscode-gutter-preview",
+    "oderwat.indent-rainbow",
+    "mikestead.dotenv",
+    "MariusAlchimavicius.json-to-ts",
+    "emilast.LogFileHighlighter",
+    "planbcoding.vscode-react-refactor",
+    "eamodio.gitlens"
+  ],
+  "unwantedRecommendations": []
+}

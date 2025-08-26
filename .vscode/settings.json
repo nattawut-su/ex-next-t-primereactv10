@@ -1,0 +1,18 @@
+{
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.format.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always", // ให้ fix auto imports/unused vars อื่นๆ ได้
+    "source.fixAll.eslint": "never" // แต่ไม่ให้ ESLint มายุ่งเรื่อง format
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.suggest.autoImports": true
+}
