@@ -1,7 +1,8 @@
 {
   "name": "ex-next-t-primereactv10",
-  "version": "0.0.1-snapshot",
   "private": true,
+  "version": "0.0.1-snapshot",
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
