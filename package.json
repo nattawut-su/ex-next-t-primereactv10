@@ -17,6 +17,7 @@
     "@hookform/resolvers": "^5.2.1",
     "@tanstack/react-query": "^5.85.5",
     "axios": "^1.11.0",
+    "chart.js": "^4.5.0",
     "date-fns": "^4.1.0",
     "next": "15.5.0",
     "next-intl": "^4.3.5",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9.0.0",
     "@next/eslint-plugin-next": "^15.5.0",
     "@tanstack/react-query-devtools": "^5.85.5",
     "@testing-library/jest-dom": "^6.8.0",
@@ -39,17 +41,22 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.0",
     "eslint-config-prettier": "^10.1.8",
-    "jsdom": "^26.1.0",
-    "prettier": "^3.6.2",
-    "typescript": "^5",
-    "vitest": "^3.2.4",
-    "@typescript-eslint/parser": "^8.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.8",
-    "@eslint/js": "^9.0.0"
+    "jsdom": "^26.1.0",
+    "msw": "^2.10.5",
+    "prettier": "^3.6.2",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
