@@ -7,16 +7,12 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   output: 'standalone',
 
+  typedRoutes: true,
+
   assetPrefix: process.env.CDN_URL || undefined,
 
   experimental: {
-    typedRoutes: true,
     optimizePackageImports: ['date-fns', 'lodash-es'],
-  },
-
-  modularizeImports: {
-    'date-fns': { transform: 'date-fns/{{member}}' },
-    'lodash-es': { transform: 'lodash-es/{{member}}' },
   },
 
   compiler: {
@@ -27,10 +23,35 @@ const nextConfig: NextConfig = {
   typescript: { ignoreBuildErrors: false },
 
   async headers() {
+    const csp = isProd
+      ? [
+          "default-src 'self'",
+          "base-uri 'self'",
+          "object-src 'none'",
+          "frame-ancestors 'self'",
+          "img-src 'self' data: blob:",
+          "style-src 'self' 'unsafe-inline'",
+          "font-src 'self'",
+          "script-src 'self'",
+          "connect-src 'self'",
+        ].join('; ')
+      : [
+          "default-src 'self'",
+          "base-uri 'self'",
+          "object-src 'none'",
+          "frame-ancestors 'self'",
+          "img-src 'self' data: blob:",
+          "style-src 'self' 'unsafe-inline'",
+          "worker-src 'self'",
+          "font-src 'self'",
+          "script-src 'self'",
+          "connect-src 'self' http://localhost:8080",
+        ].join('; ');
     return [
       {
         source: '/(.*)',
         headers: [
+          { key: 'Content-Security-Policy-Report-Only', value: csp },
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
@@ -41,14 +62,6 @@ const nextConfig: NextConfig = {
         ],
       },
     ];
-  },
-
-  async redirects() {
-    return [{ source: '/docs', destination: '/guide', permanent: true }];
-  },
-
-  async rewrites() {
-    return [{ source: '/api/:path*', destination: 'https://api.example.com/:path*' }];
   },
 };
 

@@ -1,41 +1,35 @@
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-import { FlatCompat } from '@eslint/eslintrc';
-
-// เพิ่มสองตัวนี้เพื่อให้ทำงานกับ Prettier
+// เพิ่ม eslint-config-prettier เพื่อให้ทำงานกับ Prettier
+import nextPlugin from '@next/eslint-plugin-next';
 import eslintConfigPrettier from 'eslint-config-prettier';
-import prettierPlugin from 'eslint-plugin-prettier';
 
 import js from '@eslint/js';
-import tseslint from 'typescript-eslint';
+import tseslint from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
 import reactHooks from 'eslint-plugin-react-hooks';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
+const nextCoreRules = (nextPlugin.configs && (nextPlugin.configs['core-web-vitals']?.rules || nextPlugin.configs.recommended?.rules)) || {};
 
 const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
   js.configs.recommended,
-  ...tseslint.configs.recommended,
-  reactHooks.configs['recommended-latest'],
+  reactHooks.configs.recommended,
+  tseslint.configs.recommended,
   {
+    files: ['**/*.{ts,tsx}'],
     ignores: ['node_modules/**', '.next/**', 'out/**', 'build/**', 'next-env.d.ts'],
-    plugins: {
-      // ผูก plugin ของ Prettier ให้ ESLint รันเช็คฟอร์แมตด้วย
-      prettier: prettierPlugin,
+    languageOptions: {
+      parser: tsParser,
+      parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
     },
+    plugins: { '@next/next': nextPlugin, },
     rules: {
-      // ให้ Prettier เป็น error ถ้าฟอร์แมตไม่ตรง
-      'prettier/prettier': 'error',
+      ...nextCoreRules,
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
+      '@next/next/no-html-link-for-pages': 'off',
+      '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+      '@typescript-eslint/consistent-type-imports': 'warn',
     },
   },
-  // ต้องใส่ "ท้ายสุด" เพื่อปิดกฎ ESLint ที่ชนกับ Prettier
   eslintConfigPrettier,
 ];
 
