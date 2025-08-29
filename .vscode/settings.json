@@ -1,4 +1,5 @@
 {
+  "editor.wordWrap": "on",
   "editor.insertSpaces": true,
   "editor.formatOnSave": true,
   "editor.trimAutoWhitespace": true,
@@ -8,12 +9,7 @@
     "source.fixAll": "always", // ให้ fix auto imports/unused vars อื่นๆ ได้
     "source.fixAll.eslint": "never" // แต่ไม่ให้ ESLint มายุ่งเรื่อง format
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "[typescript]": {
     "editor.tabSize": 2
   },
@@ -22,5 +18,5 @@
   },
   "typescript.suggest.autoImports": true,
   "javascript.suggest.autoImports": true,
-  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }

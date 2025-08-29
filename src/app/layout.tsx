@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import '@/assets/css/template.css';
 
 import Providers from '@/bootstrap/providers';
 
@@ -17,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Next App',
   description: 'examples next app',
+  icons: {
+    icon: 'images/favicon.ico',
+  },
 };
 
 interface RootLayoutProps {

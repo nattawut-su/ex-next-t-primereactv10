@@ -2,14 +2,20 @@
 
 import PersonModel from '@/models/person';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { Route } from 'next';
 
-function Chapter2() {
+function Chapter3() {
   const [value, setValue] = useState<PersonModel>({ fname: '', lname: '' });
-  const [submitted, setSubmitted] = useState<PersonModel | null>(null);
+  const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(value);
+    const params = new URLSearchParams({
+      fname: value.fname,
+      lname: value.lname,
+    });
+    router.push(`/classic/chapter3/result?${params.toString()}` as Route);
   };
 
   return (
@@ -22,13 +28,8 @@ function Chapter2() {
         <input type="text" name="lname" value={value.lname} onChange={(e) => setValue((v) => ({ ...v, lname: e.target.value }))} />
       </div>
       <button type="submit">Submit</button>
-      {submitted && (
-        <div>
-          <b>Result:</b> {submitted.fname} {submitted.lname}
-        </div>
-      )}
     </form>
   );
 }
 
-export default Chapter2;
+export default Chapter3;

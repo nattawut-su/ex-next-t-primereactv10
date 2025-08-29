@@ -1,14 +1,10 @@
 'use client';
 
+import PersonModel from '@/models/person';
 import { useState } from 'react';
 
-interface Chapter1Props {
-  fname: string;
-  lname: string;
-}
-
 function Chapter1() {
-  const [value, setValue] = useState<Chapter1Props>({ fname: '', lname: '' });
+  const [value, setValue] = useState<PersonModel>({ fname: '', lname: '' });
 
   return (
     <div>
