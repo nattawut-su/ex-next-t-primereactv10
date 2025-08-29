@@ -1,20 +1,19 @@
 'use client';
 
 import PersonModel from '@/models/person';
+import { usePerson } from '@/layouts/PersonContextLayout';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-function Chapter3() {
+function Chapter4() {
   const [value, setValue] = useState<PersonModel>({ fname: '', lname: '' });
+  const { setPerson } = usePerson();
   const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const params = new URLSearchParams({
-      fname: value.fname,
-      lname: value.lname,
-    });
-    router.push(`/classic/chapter3/result?${params.toString()}`);
+    setPerson(value);
+    router.push(`/classic/chapter4/result`);
   };
 
   return (
@@ -31,4 +30,4 @@ function Chapter3() {
   );
 }
 
-export default Chapter3;
+export default Chapter4;
