@@ -1,11 +1,11 @@
 'use client';
 
-import PersonModel from '@/models/person';
+import { PersonFormModel } from '@/models/person';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 function Chapter3() {
-  const [value, setValue] = useState<PersonModel>({ fname: '', lname: '' });
+  const [value, setValue] = useState<PersonFormModel>({ fname: '', lname: '' });
   const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent) => {

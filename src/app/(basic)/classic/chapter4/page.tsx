@@ -1,12 +1,12 @@
 'use client';
 
-import PersonModel from '@/models/person';
+import { PersonFormModel } from '@/models/person';
 import { usePerson } from '@/layouts/PersonContextLayout';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 function Chapter4() {
-  const [value, setValue] = useState<PersonModel>({ fname: '', lname: '' });
+  const [value, setValue] = useState<PersonFormModel>({ fname: '', lname: '' });
   const { setPerson } = usePerson();
   const router = useRouter();
 
