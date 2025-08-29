@@ -1,7 +1,7 @@
 import { http, HttpResponse } from 'msw';
 import { db, nextId } from '../db';
 
-const API = '/api/person';
+const API = '/mock-api/person';
 
 export const handlers = [
   // GET /api/person (list)
@@ -9,6 +9,7 @@ export const handlers = [
 
   // GET /api/person/:id
   http.get(`${API}/:id`, ({ params }) => {
+    console.log('MSW intercepted /api/person/:id', params);
     const u = db.personData.find((x) => x.id === Number(params.id));
     return u ? HttpResponse.json(u) : new HttpResponse('Not Found', { status: 404 });
   }),
