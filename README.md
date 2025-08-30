@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NEXT.JS + TypeScript + primereact v10
 
-## Getting Started
+โปรเจกต์ตัวอย่าง สำหรับเรียนรู้เบื่องต้น ให้ทำตาม
 
-First, run the development server:
+> ### Requirements
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js version: 18.17.0 ขึ้นไป
+- npm version: 9 ขึ้นไป
+
+[nodejs download](https://nodejs.org/en/download/)
+
+> ### Installation
+
+- Clone repo:
+
+```sh
+git clone https://github.com/nattawut-su/ex-vite-primereactv10.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- เปลี่ยนไดเรกทอรีไปที่โปรเจกต์
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+cd ex-next-t-primereactv10
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- ติดตั้ง
 
-## Learn More
+```sh
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+> ### Getting started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+รันแอพ development โดย mock ข้อมูลใช้คำสั่ง:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```sh
+npm run dev:mock
+```
 
-## Deploy on Vercel
+รันแอพ development โดย ไม่ mock ข้อมูลใช้คำสั่ง:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000
+
+> ### Usage
+>
+> | บทเรียน (classic) | อธิบาย                                                              | url                                       |
+> | ----------------- | ------------------------------------------------------------------- | ----------------------------------------- |
+> | chapter1          | การใช้งาน State พื้นฐาน                                             | /classic/chapter1                         |
+> | chapter2          | การใช้งาน State และ Props Event ใน React                            | /classic/chapter2                         |
+> | chapter3          | การจัดการ Event และการส่งค่าระหว่าง Components ด้วย useRouter       | /classic/chapter3                         |
+> | chapter4          | การส่งค่าระหว่าง Components ด้วย Context API                        | /classic/chapter4                         |
+> | chapter5          | การใช้งาน useEffect และ Lifecycle(localStorage) เบื้องต้น           | /classic/chapter5                         |
+> | chapter6          | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch | /classic/chapter6 และ /classic/chapter6/1 |
+
+> | บทเรียน (advanced) | อธิบาย | url |
+> | ------------------ | ------ | --- |
+
+## VSCODE
+
+เรา รวม extension ใน vscode ที่จำเป็น/ควร ต้องมีติดใว้ใน /.vscode/extensions.json
+
+สามารถ ติดตั้งโดยไปที่ extension (Ctrl+Shift+X บน Windows Cmd + Shift + X บน macOS)
+
+นำคำสั่ง `@recommended` วางบนช่องค้นหา
+
+![recommended](https://cdn.discordapp.com/attachments/860249330908397587/1411411810375962755/image.png?ex=68b48f2e&is=68b33dae&hm=8022e1129e44a55f0ec71b36c6ea2194f6f58d3f682ae5457acb223ca735a730&)
