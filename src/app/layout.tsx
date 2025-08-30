@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 
 import Providers from '@/bootstrap/providers';
-import MswInit from '@/bootstrap/msw-init';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -30,7 +29,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <MswInit></MswInit>
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -20,7 +20,7 @@ const eslintConfig = [
       parser: tsParser,
       parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
     },
-    plugins: { '@next/next': nextPlugin, },
+    plugins: { '@next/next': nextPlugin },
     rules: {
       ...nextCoreRules,
       'react-hooks/rules-of-hooks': 'error',

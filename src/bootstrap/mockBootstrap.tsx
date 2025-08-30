@@ -1,18 +1,12 @@
-'use client';
-import { useEffect, useState } from 'react';
+let ready: Promise<void> | null = null;
 
-export default function MswReady({ children }: { readonly children: React.ReactNode }) {
-  const [ready, setReady] = useState(false);
-
-  useEffect(() => {
-    if (process.env.NEXT_PUBLIC_USE_MOCK === 'true') {
-      import('@/mocks').then(() => setReady(true));
-    } else {
-      setReady(true);
-    }
-  }, []);
-
-  if (!ready) return null; // หรือ loading UI
-
-  return <>{children}</>;
+export async function ensureMocks() {
+  if (process.env.NEXT_PUBLIC_USE_MOCK !== 'true') return Promise.resolve();
+  if (!ready) {
+    const { worker } = await import('../mocks/browser');
+    ready = worker.start({ onUnhandledRequest: 'bypass' }).then(() => {
+      console.log('MSW ready');
+    });
+  }
+  return ready;
 }
