@@ -43,7 +43,7 @@ npm run dev:mock
 npm run dev
 ```
 
-Open http://localhost:3000
+Open `http://localhost:3000`
 
 > ### Usage
 >
@@ -56,6 +56,8 @@ Open http://localhost:3000
 > | chapter5          | การส่งค่าระหว่าง Components ด้วย Context API                            | /classic/chapter5                                               |
 > | chapter6          | การใช้งาน Lifecycle(useEffect) และ localStorage เบื้องต้น               | /classic/chapter6                                               |
 > | chapter7          | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch API | /classic/chapter7 และ /classic/chapter7/1                       |
+> | chapter8          | ตัวอย่างการ สร้าง และใช้งาน Component พื้นฐาน                           | /classic/chapter8                                               |
+> | chapter8          | ตัวอย่างการ ทำงานของ server Component ร่วมกับ client Component          | /classic/chapter9                                               |
 
 > | บทเรียน (advanced) | อธิบาย | url |
 > | ------------------ | ------ | --- |

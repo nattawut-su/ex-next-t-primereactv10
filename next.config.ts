@@ -33,7 +33,7 @@ const nextConfig: NextConfig = {
           "style-src 'self' 'unsafe-inline'",
           "font-src 'self'",
           "script-src 'self'",
-          "connect-src 'self'",
+          "connect-src 'self' https://jsonplaceholder.typicode.com",
         ].join('; ')
       : [
           "default-src 'self'",
@@ -45,7 +45,7 @@ const nextConfig: NextConfig = {
           "worker-src 'self'",
           "font-src 'self'",
           "script-src 'self'",
-          "connect-src 'self' http://localhost:8080",
+          "connect-src 'self' https://jsonplaceholder.typicode.com",
         ].join('; ');
     return [
       {
