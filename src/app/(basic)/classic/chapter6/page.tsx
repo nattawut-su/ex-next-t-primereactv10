@@ -1,21 +1,24 @@
 'use client';
 
 import { PersonFormModel } from '@/models/person';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-function Chapter6() {
+function Chapter5() {
   const [value, setValue] = useState<PersonFormModel>({ fname: '', lname: '' });
   const router = useRouter();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  useEffect(() => {
+    const data = localStorage.getItem('personData');
+    if (data) {
+      localStorage.removeItem('personData');
+    }
+  }, []);
+
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const res = await fetch('/mock-api/person', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(value),
-    });
-    router.push(`/classic/chapter6/${(await res.json()).id}`);
+    localStorage.setItem('personData', JSON.stringify(value));
+    router.push(`/classic/chapter5/result`);
   };
 
   return (
@@ -32,4 +35,4 @@ function Chapter6() {
   );
 }
 
-export default Chapter6;
+export default Chapter5;

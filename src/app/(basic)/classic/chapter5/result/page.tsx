@@ -1,25 +1,18 @@
 'use client';
-import PersonModel from '@/models/person';
-import { useEffect, useState } from 'react';
+
+import { usePerson } from '@/layouts/PersonContextLayout';
 
 export default function ResultPage() {
-  const [value, setValue] = useState<PersonModel | null>(null);
-
-  useEffect(() => {
-    const data = localStorage.getItem('personData');
-    if (data) {
-      setValue(JSON.parse(data));
-    }
-  }, []);
+  const { person } = usePerson();
 
   return (
     <div>
       <h2>Result</h2>
       <div>
-        <b>First Name:</b> {value?.fname}
+        <b>First Name:</b> {person?.fname}
       </div>
       <div>
-        <b>Last Name:</b> {value?.lname}
+        <b>Last Name:</b> {person?.lname}
       </div>
     </div>
   );

@@ -1,24 +1,19 @@
 'use client';
 
 import { PersonFormModel } from '@/models/person';
-import { useEffect, useState } from 'react';
+import { usePerson } from '@/layouts/PersonContextLayout';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-function Chapter5() {
+function Chapter4() {
   const [value, setValue] = useState<PersonFormModel>({ fname: '', lname: '' });
+  const { setPerson } = usePerson();
   const router = useRouter();
-
-  useEffect(() => {
-    const data = localStorage.getItem('personData');
-    if (data) {
-      localStorage.removeItem('personData');
-    }
-  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    localStorage.setItem('personData', JSON.stringify(value));
-    router.push(`/classic/chapter5/result`);
+    setPerson(value);
+    router.push(`/classic/chapter4/result`);
   };
 
   return (
@@ -35,4 +30,4 @@ function Chapter5() {
   );
 }
 
-export default Chapter5;
+export default Chapter4;

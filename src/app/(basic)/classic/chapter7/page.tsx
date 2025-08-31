@@ -1,19 +1,21 @@
 'use client';
 
 import { PersonFormModel } from '@/models/person';
-import { usePerson } from '@/layouts/PersonContextLayout';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-function Chapter4() {
+function Chapter6() {
   const [value, setValue] = useState<PersonFormModel>({ fname: '', lname: '' });
-  const { setPerson } = usePerson();
   const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setPerson(value);
-    router.push(`/classic/chapter4/result`);
+    const res = await fetch('/mock-api/person', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(value),
+    });
+    router.push(`/classic/chapter6/${(await res.json()).id}`);
   };
 
   return (
@@ -30,4 +32,4 @@ function Chapter4() {
   );
 }
 
-export default Chapter4;
+export default Chapter6;

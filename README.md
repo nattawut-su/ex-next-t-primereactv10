@@ -47,14 +47,15 @@ Open http://localhost:3000
 
 > ### Usage
 >
-> | บทเรียน (classic) | อธิบาย                                                              | url                                       |
-> | ----------------- | ------------------------------------------------------------------- | ----------------------------------------- |
-> | chapter1          | การใช้งาน State พื้นฐาน                                             | /classic/chapter1                         |
-> | chapter2          | การใช้งาน State และ Props Event ใน React                            | /classic/chapter2                         |
-> | chapter3          | การจัดการ Event และการส่งค่าระหว่าง Components ด้วย useRouter       | /classic/chapter3                         |
-> | chapter4          | การส่งค่าระหว่าง Components ด้วย Context API                        | /classic/chapter4                         |
-> | chapter5          | การใช้งาน useEffect และ Lifecycle(localStorage) เบื้องต้น           | /classic/chapter5                         |
-> | chapter6          | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch | /classic/chapter6 และ /classic/chapter6/1 |
+> | บทเรียน (classic) | อธิบาย                                                                  | url                                                             |
+> | ----------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------- |
+> | chapter1          | การใช้งาน State พื้นฐาน                                                 | /classic/chapter1                                               |
+> | chapter2          | การใช้งาน State และ Props Event ใน React                                | /classic/chapter2                                               |
+> | chapter3          | การจัดการ Event และการส่งค่าระหว่าง Components ด้วย useRouter           | /classic/chapter3                                               |
+> | chapter4          | การใช้งาน useMemo พื้นฐาน                                               | /classic/chapter4/useMemo และ /classic/chapter4/without-useMemo |
+> | chapter5          | การส่งค่าระหว่าง Components ด้วย Context API                            | /classic/chapter5                                               |
+> | chapter6          | การใช้งาน Lifecycle(useEffect) และ localStorage เบื้องต้น               | /classic/chapter6                                               |
+> | chapter7          | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch API | /classic/chapter7 และ /classic/chapter7/1                       |
 
 > | บทเรียน (advanced) | อธิบาย | url |
 > | ------------------ | ------ | --- |
