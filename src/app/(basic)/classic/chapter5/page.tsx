@@ -13,7 +13,7 @@ function Chapter4() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setPerson(value);
-    router.push(`/classic/chapter4/result`);
+    router.push(`/classic/chapter5/result`);
   };
 
   return (

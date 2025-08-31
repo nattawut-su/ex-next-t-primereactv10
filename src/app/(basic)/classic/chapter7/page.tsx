@@ -15,7 +15,7 @@ function Chapter6() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(value),
     });
-    router.push(`/classic/chapter6/${(await res.json()).id}`);
+    router.push(`/classic/chapter7/${(await res.json()).id}`);
   };
 
   return (

@@ -18,7 +18,7 @@ function Chapter5() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     localStorage.setItem('personData', JSON.stringify(value));
-    router.push(`/classic/chapter5/result`);
+    router.push(`/classic/chapter6/result`);
   };
 
   return (
