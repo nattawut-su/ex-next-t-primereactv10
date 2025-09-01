@@ -50,7 +50,7 @@ Open `http://localhost:3000`
 > | บทเรียน (classic) | อธิบาย                                                                  | url                                                             |
 > | ----------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------- |
 > | chapter 1         | การใช้งาน State พื้นฐาน                                                 | /classic/chapter1                                               |
-> | chapter 2         | การใช้งาน State และ Props Event ใน React                                | /classic/chapter2                                               |
+> | chapter 2         | การใช้งาน State, Props Event และ การจัดการฟอร์ม (Form Handling)         | /classic/chapter2                                               |
 > | chapter 3         | การจัดการ Event และการส่งค่าระหว่าง Components ด้วย useRouter           | /classic/chapter3                                               |
 > | chapter 4         | การใช้งาน useMemo พื้นฐาน                                               | /classic/chapter4/useMemo และ /classic/chapter4/without-useMemo |
 > | chapter 5         | การส่งค่าระหว่าง Components ด้วย Context API                            | /classic/chapter5                                               |
