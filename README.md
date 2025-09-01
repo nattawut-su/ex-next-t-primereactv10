@@ -61,8 +61,9 @@ Open `http://localhost:3000`
 > | chapter 10        | ตัวอย่างการใช้งาน Custom Hook เบื้องต้น                                 | /classic/chapter10                                              |
 > | chapter bonus     | การจัดการ Routing เบื้องต้น                                             | chapter7 (dynamic route)                                        |
 
-> | บทเรียน (advanced) | อธิบาย | url |
-> | ------------------ | ------ | --- |
+> | บทเรียน (advanced) | อธิบาย                                              | url                |
+> | ------------------ | --------------------------------------------------- | ------------------ |
+> | chapter 1          | การใช้งาน useReducer สำหรับ state ซับซ้อน/หลายฟิลด์ | /advanced/chapter1 |
 
 ## VSCODE
 
