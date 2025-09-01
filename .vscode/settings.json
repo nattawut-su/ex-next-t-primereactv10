@@ -13,5 +13,8 @@
   "editor.tabSize": 2,
   "typescript.suggest.autoImports": true,
   "javascript.suggest.autoImports": true,
-  "typescript.preferences.importModuleSpecifier": "non-relative"
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
+  }
 }
