@@ -34,11 +34,21 @@ function Chapter2() {
     <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="fname">First Name:</label>
-        <input type="text" name="fname" value={value.fname} onChange={(e) => setValue((v) => ({ ...v, fname: e.target.value }))} />
+        <input
+          type="text"
+          name="fname"
+          value={value.fname}
+          onChange={(e) => setValue((v) => ({ ...v, fname: e.target.value }))}
+        />
         {error?.fname && <div style={{ color: 'red' }}>{error.fname}</div>}
         <br />
         <label htmlFor="lname">Last Name:</label>
-        <input type="text" name="lname" value={value.lname} onChange={(e) => setValue((v) => ({ ...v, lname: e.target.value }))} />
+        <input
+          type="text"
+          name="lname"
+          value={value.lname}
+          onChange={(e) => setValue((v) => ({ ...v, lname: e.target.value }))}
+        />
         {error?.lname && <div style={{ color: 'red' }}>{error.lname}</div>}
       </div>
       <button type="submit">Submit</button>

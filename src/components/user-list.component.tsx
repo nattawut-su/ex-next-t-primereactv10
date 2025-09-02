@@ -10,7 +10,10 @@ export function UserList(props: Props) {
   console.log('UserList props.users in client');
   return (
     <div>
-      <input value={filter} onChange={(e) => setFilter(e.target.value)} />
+      <input
+        value={filter}
+        onChange={(e) => setFilter(e.target.value)}
+      />
       <ul>
         {props.users
           .filter((u) => u.name.toLowerCase().includes(filter.toLowerCase()))

@@ -64,6 +64,7 @@ Open `http://localhost:3000`
 > | บทเรียน (advanced) | อธิบาย                                              | url                |
 > | ------------------ | --------------------------------------------------- | ------------------ |
 > | chapter 1          | การใช้งาน useReducer สำหรับ state ซับซ้อน/หลายฟิลด์ | /advanced/chapter1 |
+> | chapter 2          | การจัดการฟอร์ม ด้วย Zod                             | /advanced/chapter2 |
 
 ## VSCODE
 

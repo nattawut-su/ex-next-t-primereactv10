@@ -36,10 +36,20 @@ export default function AdvancedPage() {
       {/* Add */}
       <div>
         <label htmlFor="fname">First Name:</label>
-        <input type="text" name="fname" value={formValue?.fname || ''} onChange={(e) => setFormValue((v) => ({ ...v, fname: e.target.value }))} />
+        <input
+          type="text"
+          name="fname"
+          value={formValue?.fname || ''}
+          onChange={(e) => setFormValue((v) => ({ ...v, fname: e.target.value }))}
+        />
         <br />
         <label htmlFor="lname">Last Name:</label>
-        <input type="text" name="lname" value={formValue?.lname || ''} onChange={(e) => setFormValue((v) => ({ ...v, lname: e.target.value }))} />
+        <input
+          type="text"
+          name="lname"
+          value={formValue?.lname || ''}
+          onChange={(e) => setFormValue((v) => ({ ...v, lname: e.target.value }))}
+        />
       </div>
       <button onClick={() => dispatch({ type: 'ADD_USER', payload: formValue })}>Add Person</button>
       <br />
@@ -49,8 +59,14 @@ export default function AdvancedPage() {
           <li key={person.id}>
             {editingId === person.id ? (
               <>
-                <input value={editFormValue?.fname || ''} onChange={(e) => setEditFormValue((v) => ({ ...v, fname: e.target.value }))} />
-                <input value={editFormValue?.lname || ''} onChange={(e) => setEditFormValue((v) => ({ ...v, lname: e.target.value }))} />
+                <input
+                  value={editFormValue?.fname || ''}
+                  onChange={(e) => setEditFormValue((v) => ({ ...v, fname: e.target.value }))}
+                />
+                <input
+                  value={editFormValue?.lname || ''}
+                  onChange={(e) => setEditFormValue((v) => ({ ...v, lname: e.target.value }))}
+                />
                 <button
                   onClick={() => {
                     dispatch({

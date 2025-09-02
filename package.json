@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
-    "dev:mock": "dotenv -e .env.mock -- next dev",
+    "dev:mock": "dotenv -e .env.mock -- next dev --turbopack",
     "build": "next build --turbopack",
     "start": "node .next/standalone/server.js",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",

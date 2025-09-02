@@ -7,4 +7,5 @@ module.exports = {
   tabWidth: 2,
   bracketSpacing: true,
   arrowParens: 'always',
+  singleAttributePerLine: true,
 };

@@ -20,10 +20,20 @@ function Chapter4() {
     <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="fname">First Name:</label>
-        <input type="text" name="fname" value={value.fname} onChange={(e) => setValue((v) => ({ ...v, fname: e.target.value }))} />
+        <input
+          type="text"
+          name="fname"
+          value={value.fname}
+          onChange={(e) => setValue((v) => ({ ...v, fname: e.target.value }))}
+        />
         <br />
         <label htmlFor="lname">Last Name:</label>
-        <input type="text" name="lname" value={value.lname} onChange={(e) => setValue((v) => ({ ...v, lname: e.target.value }))} />
+        <input
+          type="text"
+          name="lname"
+          value={value.lname}
+          onChange={(e) => setValue((v) => ({ ...v, lname: e.target.value }))}
+        />
       </div>
       <button type="submit">Submit</button>
     </form>
