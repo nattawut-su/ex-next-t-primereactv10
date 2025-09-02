@@ -11,7 +11,7 @@ export default function Page() {
   const [submitted, setSubmitted] = useState<UserChapter2Model | null>(null);
 
   const methods = useForm<UserChapter2Model>({
-    resolver: zodResolver(userSchema as z.ZodType<UserChapter2Model, any>),
+    resolver: zodResolver(userSchema as z.ZodType<UserChapter2Model, UserChapter2Model>),
     defaultValues: {
       name: '',
       email: '',
@@ -35,27 +35,13 @@ export default function Page() {
   return (
     <>
       <h1>validate form by Zod</h1>
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        noValidate
-      >
+      <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <div>
-          <InputFormCustom
-            label="Name"
-            register={register('name')}
-            error={errors.name}
-          />
+          <InputFormCustom label="Name" register={register('name')} error={errors.name} />
           <br />
-          <InputFormCustom
-            label="Email"
-            register={register('email')}
-            error={errors.email}
-          />
+          <InputFormCustom label="Email" register={register('email')} error={errors.email} />
           <br />
-          <button
-            type="submit"
-            disabled={isSubmitting}
-          >
+          <button type="submit" disabled={isSubmitting}>
             Submit
           </button>
         </div>
