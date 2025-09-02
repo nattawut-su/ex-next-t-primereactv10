@@ -47,24 +47,25 @@ Open `http://localhost:3000`
 
 > ### Usage
 >
-> | บทเรียน (classic) | อธิบาย                                                                  | url                                                             |
-> | ----------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------- |
-> | chapter 1         | การใช้งาน State พื้นฐาน                                                 | /classic/chapter1                                               |
-> | chapter 2         | การใช้งาน State, Props Event และ การจัดการฟอร์ม (Form Handling)         | /classic/chapter2                                               |
-> | chapter 3         | การจัดการ Event และการส่งค่าระหว่าง Components ด้วย useRouter           | /classic/chapter3                                               |
-> | chapter 4         | การใช้งาน useMemo พื้นฐาน                                               | /classic/chapter4/useMemo และ /classic/chapter4/without-useMemo |
-> | chapter 5         | การส่งค่าระหว่าง Components ด้วย Context API                            | /classic/chapter5                                               |
-> | chapter 6         | การใช้งาน Lifecycle(useEffect) และ localStorage เบื้องต้น               | /classic/chapter6                                               |
-> | chapter 7         | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch API | /classic/chapter7 และ /classic/chapter7/1                       |
-> | chapter 8         | ตัวอย่างการ สร้าง และใช้งาน Component พื้นฐาน                           | /classic/chapter8                                               |
-> | chapter 9         | ตัวอย่างการ ทำงานของ server Component ร่วมกับ client Component          | /classic/chapter9                                               |
-> | chapter 10        | ตัวอย่างการใช้งาน Custom Hook เบื้องต้น                                 | /classic/chapter10                                              |
-> | chapter bonus     | การจัดการ Routing เบื้องต้น                                             | chapter7 (dynamic route)                                        |
+> | บทเรียน (classic) | อธิบาย                                                                  | url                                                               |
+> | ----------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------- |
+> | chapter 1         | การใช้งาน State พื้นฐาน                                                 | /classic/chapter1                                                 |
+> | chapter 2         | การใช้งาน State, Props Event และ การจัดการฟอร์ม (Form Handling)         | /classic/chapter2                                                 |
+> | chapter 3         | การจัดการ Event และการส่งค่าระหว่าง Components ด้วย useRouter           | /classic/chapter3                                                 |
+> | chapter 4         | การใช้งาน useMemo พื้นฐาน                                               | /classic/chapter4/useMemo <br/> /classic/chapter4/without-useMemo |
+> | chapter 5         | การส่งค่าระหว่าง Components ด้วย Context API                            | /classic/chapter5                                                 |
+> | chapter 6         | การใช้งาน Lifecycle(useEffect) และ localStorage เบื้องต้น               | /classic/chapter6                                                 |
+> | chapter 7         | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch API | /classic/chapter7 <br/> /classic/chapter7/1                       |
+> | chapter 8         | ตัวอย่างการ สร้าง และใช้งาน Component พื้นฐาน                           | /classic/chapter8                                                 |
+> | chapter 9         | ตัวอย่างการ ทำงานของ server Component ร่วมกับ client Component          | /classic/chapter9                                                 |
+> | chapter 10        | ตัวอย่างการใช้งาน Custom Hook เบื้องต้น                                 | /classic/chapter10                                                |
+> | chapter bonus     | การจัดการ Routing เบื้องต้น                                             | chapter7 (dynamic route)                                          |
 
-> | บทเรียน (advanced) | อธิบาย                                              | url                |
-> | ------------------ | --------------------------------------------------- | ------------------ |
-> | chapter 1          | การใช้งาน useReducer สำหรับ state ซับซ้อน/หลายฟิลด์ | /advanced/chapter1 |
-> | chapter 2          | การจัดการฟอร์ม ด้วย Zod                             | /advanced/chapter2 |
+> | บทเรียน (advanced) | อธิบาย                                                            | url                |
+> | ------------------ | ----------------------------------------------------------------- | ------------------ |
+> | chapter 1          | การใช้งาน useReducer สำหรับ state ซับซ้อน/หลายฟิลด์               | /advanced/chapter1 |
+> | chapter 2          | การจัดการฟอร์ม ด้วย Zod                                           | /advanced/chapter2 |
+> | chapter 3          | ความแตกต่าง การจัดการ HTTP REST Client ระหว่าง fetch API VS Axios | /advanced/chapter3 |
 
 ## VSCODE
 

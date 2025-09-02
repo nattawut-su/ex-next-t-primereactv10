@@ -3,7 +3,7 @@ import { PrimeReactProvider } from 'primereact/api';
 import '@/assets/css/template.css';
 
 export const metadata: Metadata = {
-  title: 'Create Next App with PrimeReact',
+  title: 'Create Next App with css-utility',
 };
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
