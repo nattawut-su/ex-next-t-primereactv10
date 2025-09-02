@@ -1,5 +1,5 @@
 'use client';
-import { useCounter } from '@/Hooks/useCounter';
+import { useCounter } from '@/hooks/useCounter';
 
 export default function Page() {
   const { count, increment, decrement, reset } = useCounter(0);
