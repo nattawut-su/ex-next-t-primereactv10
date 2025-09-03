@@ -23,6 +23,9 @@ export function Result({ id }: ResultProps) {
     try {
       setIsLoading(true);
       const response = await axiosApi.get<PersonFormModel>(`/person/${id}`);
+      if (response.status < 200 || response.status >= 300) {
+        throw new Error('Network response was not ok');
+      }
       setValue(response.data);
     } catch (error) {
       console.error('Error fetching person data', error);
