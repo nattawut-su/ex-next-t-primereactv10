@@ -1,14 +1,10 @@
-'use client';
-import { useCounter } from '@/hooks/useCounter';
+import { UserList } from '@/components/user-list.component';
+import UserModel from '@/models/user.inferface';
 
-export default function Page() {
-  const { count, increment, decrement, reset } = useCounter(0);
-  return (
-    <div>
-      <div>Count: {count}</div>
-      <button onClick={increment}>เพิ่ม</button>
-      <button onClick={decrement}>ลด</button>
-      <button onClick={reset}>รีเซ็ต</button>
-    </div>
-  );
+export default async function Page() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/users');
+  const users: UserModel[] = await res.json();
+  console.log('users ------>');
+
+  return <UserList users={users} />;
 }

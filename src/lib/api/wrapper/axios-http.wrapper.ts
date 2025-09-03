@@ -13,7 +13,7 @@ export function createAxiosHttp(baseURL?: string, defaultHeaders?: Record<string
   instance.interceptors.request.use((cfg) => {
     // ใส่ token/log ได้
     Object.assign(cfg.headers ?? {}, defaultHeaders ?? {});
-    console.log('[AXIOS:REQ]', cfg.method?.toUpperCase(), cfg.url);
+    console.log('[AXIOS:REQ]', cfg.method?.toUpperCase(), cfg.url, cfg.headers);
     return cfg;
   });
 

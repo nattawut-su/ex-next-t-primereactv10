@@ -1,10 +1,10 @@
-import { UserList } from '@/components/user-list.component';
-import UserModel from '@/models/user.inferface';
+import { Hello } from '@/components/hello.component';
 
-export default async function Page() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/users');
-  const users: UserModel[] = await res.json();
-  console.log('users ------>');
-
-  return <UserList users={users} />;
+export default function Page() {
+  return (
+    <>
+      <Hello name="World" />
+      <Hello name="Peter" />
+    </>
+  );
 }
