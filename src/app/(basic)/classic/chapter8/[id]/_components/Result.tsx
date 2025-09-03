@@ -8,6 +8,9 @@ interface ResultProps {
 
 export function Result({ id }: ResultProps) {
   const [value, setValue] = useState<PersonFormModel | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
+
   const axiosApi = axios.create({
     baseURL: '/mock-api',
     timeout: 15000,
@@ -15,13 +18,27 @@ export function Result({ id }: ResultProps) {
       'Content-Type': 'application/json',
     },
   });
+
+  const getPersonById = async () => {
+    try {
+      setIsLoading(true);
+      const response = await axiosApi.get<PersonFormModel>(`/person/${id}`);
+      setValue(response.data);
+    } catch (error) {
+      console.error('Error fetching person data', error);
+      setIsError(true);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   useEffect(() => {
     console.log('fetching', id);
-    axiosApi
-      .get<PersonFormModel>(`/person/${id}`)
-      .then((res) => setValue(res.data))
-      .catch((err) => console.error('Error fetching person data', err));
+    getPersonById();
   }, [id]);
+
+  if (isLoading) return <div>Loading...</div>;
+  if (isError) return <div>Error fetching person data</div>;
 
   return (
     <div>

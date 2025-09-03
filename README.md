@@ -62,13 +62,13 @@ Open `http://localhost:3000`
 > | chapter 11        | ตัวอย่างการใช้งาน Custom Hook เบื้องต้น                                 | /classic/chapter11                                                |
 > | chapter bonus     | การจัดการ Routing เบื้องต้น                                             | chapter7 (dynamic route)                                          |
 
-> | บทเรียน (advanced) | อธิบาย                                                         | url                |
-> | ------------------ | -------------------------------------------------------------- | ------------------ |
-> | chapter 1          | การใช้งาน useReducer สำหรับ state ซับซ้อน/หลายฟิลด์            | /advanced/chapter1 |
-> | chapter 2          | การจัดการฟอร์ม ด้วย Zod                                        | /advanced/chapter2 |
-> | chapter 3          | ความแตกต่าง การจัดการ HTTP REST Client ด้วย fetch API VS Axios | /advanced/chapter3 |
-> | chapter 4          | การใช้งาน React Query                                          | /advanced/chapter4 |
-> | chapter 5          | การใช้งาน server action                                        | /advanced/chapter5 |
+> | บทเรียน (advanced) | อธิบาย                                                                | url                |
+> | ------------------ | --------------------------------------------------------------------- | ------------------ |
+> | chapter 1          | การใช้งาน useReducer สำหรับ state ซับซ้อน/หลายฟิลด์                   | /advanced/chapter1 |
+> | chapter 2          | การจัดการฟอร์ม ด้วย Zod                                               | /advanced/chapter2 |
+> | chapter 3          | ความแตกต่าง การจัดการ HTTP REST Client ด้วย fetch API VS Axios        | /advanced/chapter3 |
+> | chapter 4          | การใช้งาน React Query (ตัวจัดการ state ของข้อมูลจาก server อัตโนมัติ) | /advanced/chapter4 |
+> | chapter 5          | การใช้งาน server action                                               | /advanced/chapter5 |
 
 ## VSCODE
 
