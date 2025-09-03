@@ -55,12 +55,12 @@ Open `http://localhost:3000`
 > | chapter 4         | การใช้งาน useMemo พื้นฐาน                                               | /classic/chapter4/useMemo <br/> /classic/chapter4/without-useMemo |
 > | chapter 5         | การส่งค่าระหว่าง Components ด้วย Context API                            | /classic/chapter5                                                 |
 > | chapter 6         | การใช้งาน Lifecycle(useEffect) และ localStorage เบื้องต้น               | /classic/chapter6                                                 |
-> | chapter 7         | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch API | /classic/chapter7 <br/> /classic/chapter7/1                       |
-> | chapter 8         | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย Axios     | /classic/chapter8 <br/> /classic/chapter8/1                       |
-> | chapter 9         | ตัวอย่างการ สร้าง และใช้งาน Component พื้นฐาน                           | /classic/chapter9                                                 |
-> | chapter 10        | ตัวอย่างการ ทำงานของ server Component ร่วมกับ client Component          | /classic/chapter10                                                |
+> | chapter 7         | ตัวอย่างการ สร้าง และใช้งาน Component พื้นฐาน                           | /classic/chapter7                                                 |
+> | chapter 8         | ตัวอย่างการ ทำงานของ server Component ร่วมกับ client Component          | /classic/chapter8                                                 |
+> | chapter 9         | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch API | /classic/chapter9 <br/> /classic/chapter9/1                       |
+> | chapter 10        | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย Axios     | /classic/chapter10 <br/> /classic/chapter10/1                     |
 > | chapter 11        | ตัวอย่างการใช้งาน Custom Hook เบื้องต้น                                 | /classic/chapter11                                                |
-> | chapter bonus     | การจัดการ Routing เบื้องต้น                                             | chapter7 (dynamic route)                                          |
+> | chapter bonus     | การจัดการ Routing เบื้องต้น                                             | chapter 9 (dynamic route)                                         |
 
 > | บทเรียน (advanced) | อธิบาย                                                                | url                |
 > | ------------------ | --------------------------------------------------------------------- | ------------------ |
