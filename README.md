@@ -49,26 +49,30 @@ Open `http://localhost:3000`
 >
 > | บทเรียน (classic) | อธิบาย                                                                  | url                                                               |
 > | ----------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------- |
-> | chapter 1         | การใช้งาน State พื้นฐาน                                                 | /classic/chapter1                                                 |
-> | chapter 2         | การใช้งาน State, Props Event และ การจัดการฟอร์ม (Form Handling)         | /classic/chapter2                                                 |
-> | chapter 3         | การจัดการ Event และการส่งค่าระหว่าง Components ด้วย useRouter           | /classic/chapter3                                                 |
-> | chapter 4         | การใช้งาน useMemo พื้นฐาน                                               | /classic/chapter4/useMemo <br/> /classic/chapter4/without-useMemo |
-> | chapter 5         | การส่งค่าระหว่าง Components ด้วย Context API                            | /classic/chapter5                                                 |
-> | chapter 6         | การใช้งาน Lifecycle(useEffect) และ localStorage เบื้องต้น               | /classic/chapter6                                                 |
-> | chapter 7         | ตัวอย่างการ สร้าง และใช้งาน Component พื้นฐาน                           | /classic/chapter7                                                 |
-> | chapter 8         | ตัวอย่างการ ทำงานของ server Component ร่วมกับ client Component          | /classic/chapter8                                                 |
-> | chapter 9         | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch API | /classic/chapter9 <br/> /classic/chapter9/1                       |
-> | chapter 10        | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย Axios     | /classic/chapter10 <br/> /classic/chapter10/1                     |
-> | chapter 11        | ตัวอย่างการใช้งาน Custom Hook เบื้องต้น                                 | /classic/chapter11                                                |
-> | chapter bonus     | การจัดการ Routing เบื้องต้น                                             | chapter 9 (dynamic route)                                         |
+> | ✅ chapter 1      | การใช้งาน State พื้นฐาน                                                 | /classic/chapter1                                                 |
+> | ✅ chapter 2      | การใช้งาน State, Props Event และ การจัดการฟอร์ม (Form Handling)         | /classic/chapter2                                                 |
+> | ✅ chapter 3      | การจัดการ Event และการส่งค่าระหว่าง Components ด้วย useRouter           | /classic/chapter3                                                 |
+> | ✅ chapter 4      | การใช้งาน useMemo พื้นฐาน                                               | /classic/chapter4/useMemo <br/> /classic/chapter4/without-useMemo |
+> | ✅ chapter 5      | การส่งค่าระหว่าง Components ด้วย Context API                            | /classic/chapter5                                                 |
+> | ✅ chapter 6      | การใช้งาน Lifecycle(useEffect) และ localStorage เบื้องต้น               | /classic/chapter6                                                 |
+> | ✅ chapter 7      | ตัวอย่างการ สร้าง และใช้งาน Component พื้นฐาน                           | /classic/chapter7                                                 |
+> | ✅ chapter 8      | ตัวอย่างการ ทำงานของ server Component ร่วมกับ client Component          | /classic/chapter8                                                 |
+> | ✅ chapter 9      | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch API | /classic/chapter9 <br/> /classic/chapter9/1                       |
+> | ✅ chapter 10     | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย Axios     | /classic/chapter10 <br/> /classic/chapter10/1                     |
+> | ✅ chapter 11     | ตัวอย่างการใช้งาน Custom Hook เบื้องต้น                                 | /classic/chapter11                                                |
+> | ✅ chapter bonus  | การจัดการ Routing เบื้องต้น                                             | chapter 9 (dynamic route)                                         |
 
 > | บทเรียน (advanced) | อธิบาย                                                                | url                |
 > | ------------------ | --------------------------------------------------------------------- | ------------------ |
-> | chapter 1          | การใช้งาน useReducer สำหรับ state ซับซ้อน/หลายฟิลด์                   | /advanced/chapter1 |
-> | chapter 2          | การจัดการฟอร์ม ด้วย Zod                                               | /advanced/chapter2 |
-> | chapter 3          | ความแตกต่าง การจัดการ HTTP REST Client ด้วย fetch API VS Axios        | /advanced/chapter3 |
-> | chapter 4          | การใช้งาน React Query (ตัวจัดการ state ของข้อมูลจาก server อัตโนมัติ) | /advanced/chapter4 |
+> | ✅ chapter 1       | การใช้งาน useReducer สำหรับ state ซับซ้อน/หลายฟิลด์                   | /advanced/chapter1 |
+> | ✅ chapter 2       | การจัดการฟอร์ม ด้วย Zod                                               | /advanced/chapter2 |
+> | ✅ chapter 3       | ความแตกต่าง การจัดการ HTTP REST Client ด้วย fetch API VS Axios        | /advanced/chapter3 |
+> | ✅ chapter 4       | การใช้งาน React Query (ตัวจัดการ state ของข้อมูลจาก server อัตโนมัติ) | /advanced/chapter4 |
 > | chapter 5          | การใช้งาน server action                                               | /advanced/chapter5 |
+> | chapter 6          | การจัดการ State ด้วย Zustand (global state)                           |                    |
+> | chapter 7          | ใช้งาน ชุดส่วนประกอบ UI ด้วย primereact (Styled)                      |                    |
+> | chapter 8          | ใช้งาน ชุดส่วนประกอบ UI ด้วย primereact (Unstyled)                    |                    |
+> | chapter 9          | การทำ Testing (Unit + Integration + E2E)                              |                    |
 
 ## VSCODE
 
@@ -78,4 +82,4 @@ Open `http://localhost:3000`
 
 นำคำสั่ง `@recommended` วางบนช่องค้นหา
 
-![recommended](https://cdn.discordapp.com/attachments/860249330908397587/1411411810375962755/image.png?ex=68b48f2e&is=68b33dae&hm=8022e1129e44a55f0ec71b36c6ea2194f6f58d3f682ae5457acb223ca735a730&)
+![recommended](https://cdn.discordapp.com/attachments/860249330908397587/1411411810375962755/image.png?ex=68b92c6e&is=68b7daee&hm=b265cdbef30539ee92bc6ae2db50d6f46e59d254386acc4ca4a7ab7f6eef4c0f&)
