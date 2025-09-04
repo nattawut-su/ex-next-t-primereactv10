@@ -4,7 +4,7 @@ import { PersonFormModel } from '@/models/person';
 import { useState } from 'react';
 
 function Chapter1() {
-  const [data, setData] = useState<PersonFormModel>({ fname: '', lname: '' });
+  const [data] = useState<PersonFormModel>({ fname: 'No', lname: 'Name' });
 
   return (
     <div>
@@ -14,7 +14,7 @@ function Chapter1() {
           type="text"
           name="fname"
           value={data.fname}
-          onChange={(e) => setData((v) => ({ ...v, fname: e.target.value }))}
+          readOnly
         />
       </div>
       <div>
@@ -23,7 +23,7 @@ function Chapter1() {
           type="text"
           name="lname"
           value={data.lname}
-          onChange={(e) => setData((v) => ({ ...v, lname: e.target.value }))}
+          readOnly
         />
       </div>
       <div>

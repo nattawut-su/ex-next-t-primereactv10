@@ -2,74 +2,22 @@
 
 โปรเจกต์ตัวอย่าง สำหรับเรียนรู้เบื่องต้น
 
-> ### Requirements
+> ### Node Installation
 
-- Node.js version: 18.17.0 ขึ้นไป
-- npm version: 9 ขึ้นไป
+- Node.js version: 18.17.0 ขึ้นไป (เทียบเท่า Tomcat+JVM)
+- npm version: 9 ขึ้นไป (เทียบเท่า Maven)
 
 [nodejs download](https://nodejs.org/en/download/)
 
-> ### Technology used
+Windows: download standalone zip + set path
 
-#### Frontend Framework
+- ทดสอบ node -v
+- ทดสอบ npm -v
+- สำหรับ powershell terminal ให้รัน Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 
-- NEXT.JS version: 15.5.0
-- React version: 19.1.0
-- TypeScript
+Linux: docker pull node:22-alpine
 
-#### UI & Styling
-
-- primereact v10
-- primeflex
-- primeicons
-- tailwindcss
-- chart.js
-
-#### State Management
-
-- Zustand
-- @tanstack/react-query
-
-#### Form & Validation
-
-- React Hook Form
-- Zod
-- @hookform/resolvers
-
-#### HTTP Client
-
-- Axios
-- Fetch API (built-in)
-
-#### Utilities
-
-- date-fns
-- store
-- next-intl
-
-#### Testing
-
-- Vitest
-- @testing-library/react
-- @testing-library/jest-dom
-- jsdom
-
-#### Mocking
-
-- MSW (Mock Service Worker)
-
-#### Lint & Format
-
-- ESLint
-- Prettier
-
-#### Dev Tools
-
-- @tanstack/react-query-devtools
-
-> ### Installation
-
-- Clone repo:
+> ### Clone Project
 
 ```sh
 git clone https://github.com/nattawut-su/ex-vite-primereactv10.git
@@ -80,8 +28,6 @@ git clone https://github.com/nattawut-su/ex-vite-primereactv10.git
 ```sh
 cd ex-next-t-primereactv10
 ```
-
-- ติดตั้ง
 
 ```sh
 npm install
