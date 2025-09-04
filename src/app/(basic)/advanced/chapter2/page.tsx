@@ -1,17 +1,17 @@
 'use client';
 import { InputFormCustom } from '@/components/input-form-custom';
 import { userSchema } from '@/lib/validate/user-schema';
-import UserChapter2Model from '@/models/UserModel';
+import UserFormModel from '@/models/UserModel';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import z from 'zod';
 
 export default function Page() {
-  const [submitted, setSubmitted] = useState<UserChapter2Model | null>(null);
+  const [submitted, setSubmitted] = useState<UserFormModel | null>(null);
 
-  const methods = useForm<UserChapter2Model>({
-    resolver: zodResolver(userSchema as z.ZodType<UserChapter2Model, UserChapter2Model>),
+  const methods = useForm<UserFormModel>({
+    resolver: zodResolver(userSchema as z.ZodType<UserFormModel, UserFormModel>),
     defaultValues: {
       name: '',
       email: '',
@@ -26,7 +26,7 @@ export default function Page() {
     reset,
   } = methods;
 
-  const onSubmit = (data: UserChapter2Model) => {
+  const onSubmit = (data: UserFormModel) => {
     console.log(data);
     setSubmitted(data);
     reset();

@@ -1,4 +1,4 @@
-export default interface UserChapter2Model {
+export default interface UserFormModel {
   id: number;
   name: string;
   email: string;
