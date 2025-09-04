@@ -1,17 +1,21 @@
-import { http, HttpResponse } from 'msw';
+import { delay, http, HttpResponse } from 'msw';
 import { db, nextId } from '../db';
 
 const API = '/mock-api/person';
 
 export const handlers = [
   // GET /api/person (list)
-  http.get(`${API}`, () => HttpResponse.json(db.personData)),
+  http.get(`${API}`, () => HttpResponse.json(db.personData, { status: 200 })),
+  http.get(`${API}/delay`, async () => {
+    await delay(8000);
+    return HttpResponse.json(db.personData, { status: 200 });
+  }),
 
   // GET /api/person/:id
   http.get(`${API}/:id`, ({ params }) => {
     console.log('MSW intercepted /api/person/:id', params);
     const u = db.personData.find((x) => x.id === Number(params.id));
-    return u ? HttpResponse.json(u) : new HttpResponse('Not Found', { status: 404 });
+    return u ? HttpResponse.json(u, { status: 200 }) : new HttpResponse('Not Found', { status: 404 });
   }),
 
   // POST /api/person

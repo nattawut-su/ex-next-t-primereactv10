@@ -126,11 +126,12 @@ Open `http://localhost:3000`
 > | ✅ chapter 2       | การจัดการฟอร์ม ด้วย Zod                                               | /advanced/chapter2 |
 > | ✅ chapter 3       | ความแตกต่าง การจัดการ HTTP REST Client ด้วย fetch API VS Axios        | /advanced/chapter3 |
 > | ✅ chapter 4       | การใช้งาน React Query (ตัวจัดการ state ของข้อมูลจาก server อัตโนมัติ) | /advanced/chapter4 |
-> | chapter 5          | การใช้งาน server action                                               | /advanced/chapter5 |
-> | chapter 6          | การจัดการ State ด้วย Zustand (global state)                           |                    |
-> | chapter 7          | ใช้งาน ชุดส่วนประกอบ UI ด้วย primereact (Styled)                      |                    |
-> | chapter 8          | ใช้งาน ชุดส่วนประกอบ UI ด้วย primereact (Unstyled)                    |                    |
-> | chapter 9          | การทำ Testing (Unit + Integration + E2E)                              |                    |
+> | ✅ chapter 5       | การใช้งาน useTransition สำหรับ จัดการ Concurrent Rendering UI         | /advanced/chapter5 |
+> | chapter 6          | การใช้งาน server action                                               | /advanced/chapter6 |
+> | chapter 7          | การจัดการ State ด้วย Zustand (global state)                           |                    |
+> | chapter 8          | ใช้งาน ชุดส่วนประกอบ UI ด้วย primereact (Styled)                      |                    |
+> | chapter 9          | ใช้งาน ชุดส่วนประกอบ UI ด้วย primereact (Unstyled)                    |                    |
+> | chapter 10         | การทำ Testing (Unit + Integration + E2E)                              |                    |
 
 ## VSCODE
 

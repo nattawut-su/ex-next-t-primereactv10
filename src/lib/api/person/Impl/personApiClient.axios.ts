@@ -10,6 +10,11 @@ export const personApiClient: PersonInterface = {
     return resp.data;
   },
 
+  getPersonsDelay: async () => {
+    const resp = await personApi.get<PersonModel[]>('/person/delay');
+    return resp.data;
+  },
+
   getPersonById: async (id: number) => {
     const resp = await personApi.get<PersonModel>(`/person/${id}`);
     return resp.data;
