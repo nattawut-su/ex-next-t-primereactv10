@@ -1,7 +1,5 @@
 import PersonModel from '@/models/person';
 
-let seq = 3;
-
 export const db = {
   personData: [
     { id: 1, fname: 'Mock', lname: 'example' },
@@ -9,6 +7,7 @@ export const db = {
   ] as PersonModel[],
 };
 
-export function nextId() {
-  return seq++;
+let seqPerson = 3;
+export function nextIdPerson() {
+  return seqPerson++;
 }

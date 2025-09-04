@@ -1,5 +1,5 @@
 import { delay, http, HttpResponse } from 'msw';
-import { db, nextId } from '../db';
+import { db, nextIdPerson } from '../db';
 
 const API = '/mock-api/person';
 
@@ -22,7 +22,7 @@ export const handlers = [
   http.post(`${API}`, async ({ request }) => {
     const body = (await request.json()) as { fname: string; lname: string };
     if (!body?.fname || !body?.lname) return new HttpResponse('fname & lname required', { status: 400 });
-    const nu = { id: nextId(), ...body };
+    const nu = { id: nextIdPerson(), ...body };
     db.personData.push(nu);
     return HttpResponse.json(nu, { status: 201 });
   }),
