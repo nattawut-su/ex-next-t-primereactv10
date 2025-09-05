@@ -51,11 +51,14 @@ Open `http://localhost:3000`
 
 > ### Usage
 
-> | บทเรียน พื้นฐาน (basis) | อธิบาย                                                         | url             |
-> | ----------------------- | -------------------------------------------------------------- | --------------- |
-> | ✅ chapter 0            | การแสดง State render พื้นฐาน                                   | /basis/chapter0 |
-> | ✅ chapter 1            | การใช้งาน State พื้นฐาน                                        | /basis/chapter1 |
-> | ✅ chapter 2            | ใช้งาน State และ Event ใน React สำหรับการจัดการฟอร์ม อย่างง่าย | /basis/chapter2 |
+> | บทเรียน พื้นฐาน (basis) | อธิบาย                                                                      | url               |
+> | ----------------------- | --------------------------------------------------------------------------- | ----------------- |
+> | ✅ chapter 0            | การแสดง State render พื้นฐาน                                                | /basis/chapter0   |
+> | ✅ chapter 1            | การใช้งาน State พื้นฐาน                                                     | /basis/chapter1   |
+> | ✅ chapter 2            | ใช้งาน State และ Event ใน React สำหรับการจัดการฟอร์ม อย่างง่าย              | /basis/chapter2   |
+> | chapter 3               | ใช้งาน State HTTP REST Client (GET - Java Servlet HTTP) บน client Component | /basis/chapter2-1 |
+> | chapter 3               | ใช้งาน State HTTP REST Client (GET - RESTful API) บน client Component       | /basis/chapter2-1 |
+> | chapter 4               | ใช้งาน State HTTP REST Client (POST - JSON) บน client Component             | /basis/chapter2-2 |
 
 > | บทเรียน (classic) | อธิบาย                                                                  | url                                                               |
 > | ----------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------- |
