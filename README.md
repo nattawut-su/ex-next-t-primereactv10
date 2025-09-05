@@ -9,7 +9,7 @@
 
 [nodejs download](https://nodejs.org/en/download/)
 
-Windows: download standalone zip + set path
+Windows: download standalone zip + set path environment variables
 
 - ทดสอบ node -v
 - ทดสอบ npm -v
@@ -50,21 +50,25 @@ npm run dev
 Open `http://localhost:3000`
 
 > ### Usage
->
+
+> | บทเรียน พื้นฐาน (basis) | อธิบาย                                                         | url             |
+> | ----------------------- | -------------------------------------------------------------- | --------------- |
+> | ✅ chapter 0            | การแสดง State render พื้นฐาน                                   | /basis/chapter0 |
+> | ✅ chapter 1            | การใช้งาน State พื้นฐาน                                        | /basis/chapter1 |
+> | ✅ chapter 2            | ใช้งาน State และ Event ใน React สำหรับการจัดการฟอร์ม อย่างง่าย | /basis/chapter2 |
+
 > | บทเรียน (classic) | อธิบาย                                                                  | url                                                               |
 > | ----------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------- |
-> | ✅ chapter 1      | การใช้งาน State พื้นฐาน                                                 | /classic/chapter1                                                 |
-> | ✅ chapter 2      | การใช้งาน State, Props Event และ การจัดการฟอร์ม (Form Handling)         | /classic/chapter2                                                 |
-> | ✅ chapter 3      | การจัดการ Event และการส่งค่าระหว่าง Components ด้วย useRouter           | /classic/chapter3                                                 |
-> | ✅ chapter 4      | การใช้งาน useMemo พื้นฐาน                                               | /classic/chapter4/useMemo <br/> /classic/chapter4/without-useMemo |
-> | ✅ chapter 5      | การส่งค่าระหว่าง Components ด้วย Context API                            | /classic/chapter5                                                 |
-> | ✅ chapter 6      | การใช้งาน Lifecycle(useEffect) และ localStorage เบื้องต้น               | /classic/chapter6                                                 |
-> | ✅ chapter 7      | ตัวอย่างการ สร้าง และใช้งาน Component พื้นฐาน                           | /classic/chapter7                                                 |
-> | ✅ chapter 8      | ตัวอย่างการ ทำงานของ server Component ร่วมกับ client Component          | /classic/chapter8                                                 |
-> | ✅ chapter 9      | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch API | /classic/chapter9 <br/> /classic/chapter9/1                       |
-> | ✅ chapter 10     | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย Axios     | /classic/chapter10 <br/> /classic/chapter10/1                     |
-> | ✅ chapter 11     | ตัวอย่างการใช้งาน Custom Hook เบื้องต้น                                 | /classic/chapter11                                                |
-> | ✅ chapter bonus  | การจัดการ Routing เบื้องต้น                                             | chapter 9 (dynamic route)                                         |
+> | ✅ chapter 1      | การจัดการ Event และการส่งค่าระหว่าง Components ด้วย useRouter           | /classic/chapter1                                                 |
+> | ✅ chapter 2      | การใช้งาน useMemo พื้นฐาน                                               | /classic/chapter2/useMemo <br/> /classic/chapter2/without-useMemo |
+> | ✅ chapter 3      | การส่งค่าระหว่าง Components ด้วย Context API                            | /classic/chapter3                                                 |
+> | ✅ chapter 4      | การใช้งาน Lifecycle(useEffect) และ localStorage เบื้องต้น               | /classic/chapter4                                                 |
+> | ✅ chapter 5      | ตัวอย่างการ สร้าง และใช้งาน Component พื้นฐาน                           | /classic/chapter5                                                 |
+> | ✅ chapter 6      | ตัวอย่างการ ทำงานของ server Component ร่วมกับ client Component          | /classic/chapter6                                                 |
+> | ✅ chapter 7      | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย fetch API | /classic/chapter7 <br/> /classic/chapter7/1                       |
+> | ✅ chapter 8      | ตัวอย่างการ บันทึกข้อมูลไป backend และ รับค่าจาก backend ด้วย Axios     | /classic/chapter8 <br/> /classic/chapter8/1                       |
+> | ✅ chapter 9      | ตัวอย่างการใช้งาน Custom Hook เบื้องต้น                                 | /classic/chapter9                                                 |
+> | ✅ chapter bonus  | การจัดการ Routing เบื้องต้น                                             | chapter 7 (dynamic route)                                         |
 
 > | บทเรียน (advanced) | อธิบาย                                                                | url                |
 > | ------------------ | --------------------------------------------------------------------- | ------------------ |
