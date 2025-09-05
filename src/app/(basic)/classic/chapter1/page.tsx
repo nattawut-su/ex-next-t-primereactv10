@@ -1,19 +1,20 @@
 'use client';
 
 import { PersonFormModel } from '@/models/person';
-import { usePerson } from '@/layouts/PersonContextLayout';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-function Chapter4() {
-  const [value, setValue] = useState<PersonFormModel>({ fname: '', lname: '' });
-  const { setPerson } = usePerson();
+function Chapter3() {
+  const [data, setData] = useState<PersonFormModel>({ fname: '', lname: '' });
   const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setPerson(value);
-    router.push(`/classic/chapter3/result`);
+    const params = new URLSearchParams({
+      fname: data.fname,
+      lname: data.lname,
+    });
+    router.push(`/classic/chapter1/result?${params.toString()}`);
   };
 
   return (
@@ -23,16 +24,16 @@ function Chapter4() {
         <input
           type="text"
           name="fname"
-          value={value.fname}
-          onChange={(e) => setValue((v) => ({ ...v, fname: e.target.value }))}
+          value={data.fname}
+          onChange={(e) => setData((v) => ({ ...v, fname: e.target.value }))}
         />
         <br />
         <label htmlFor="lname">Last Name:</label>
         <input
           type="text"
           name="lname"
-          value={value.lname}
-          onChange={(e) => setValue((v) => ({ ...v, lname: e.target.value }))}
+          value={data.lname}
+          onChange={(e) => setData((v) => ({ ...v, lname: e.target.value }))}
         />
       </div>
       <button type="submit">Submit</button>
@@ -40,4 +41,4 @@ function Chapter4() {
   );
 }
 
-export default Chapter4;
+export default Chapter3;

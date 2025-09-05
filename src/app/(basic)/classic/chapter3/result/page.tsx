@@ -1,20 +1,18 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
+import { usePerson } from '@/layouts/PersonContextLayout';
 
 export default function ResultPage() {
-  const searchParams = useSearchParams();
-  const fname = searchParams.get('fname') || '';
-  const lname = searchParams.get('lname') || '';
+  const { person } = usePerson();
 
   return (
     <div>
       <h2>Result</h2>
       <div>
-        <b>First Name:</b> {fname}
+        <b>First Name:</b> {person?.fname}
       </div>
       <div>
-        <b>Last Name:</b> {lname}
+        <b>Last Name:</b> {person?.lname}
       </div>
     </div>
   );

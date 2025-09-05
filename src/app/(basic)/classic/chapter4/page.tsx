@@ -1,32 +1,24 @@
 'use client';
 
 import { PersonFormModel } from '@/models/person';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import axios from 'axios';
 
-function Chapter6() {
+function Chapter5() {
   const [value, setValue] = useState<PersonFormModel>({ fname: '', lname: '' });
   const router = useRouter();
 
-  const axiosApi = axios.create({
-    baseURL: '/mock-api',
-    timeout: 15000,
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
+  useEffect(() => {
+    const data = localStorage.getItem('personData');
+    if (data) {
+      localStorage.removeItem('personData');
+    }
+  }, []);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    axiosApi
-      .post('/person', value)
-      .then((res) => {
-        router.push(`/classic/chapter10/${res.data.id}`);
-      })
-      .catch((err) => {
-        console.error('[AXIOS:ERR]', err?.response?.status);
-      });
+    localStorage.setItem('personData', JSON.stringify(value));
+    router.push(`/classic/chapter4/result`);
   };
 
   return (
@@ -53,4 +45,4 @@ function Chapter6() {
   );
 }
 
-export default Chapter6;
+export default Chapter5;
