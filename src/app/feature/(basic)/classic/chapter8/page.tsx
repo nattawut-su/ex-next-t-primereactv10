@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
 
-function Chapter6() {
+function Chapter8() {
   const [value, setValue] = useState<PersonFormModel>({ fname: '', lname: '' });
   const router = useRouter();
 
@@ -22,7 +22,7 @@ function Chapter6() {
     axiosApi
       .post('/person', value)
       .then((res) => {
-        router.push(`/classic/chapter8/${res.data.id}`);
+        router.push(`/feature/classic/chapter8/${res.data.id}`);
       })
       .catch((err) => {
         console.error('[AXIOS:ERR]', err?.response?.status);
@@ -53,4 +53,4 @@ function Chapter6() {
   );
 }
 
-export default Chapter6;
+export default Chapter8;

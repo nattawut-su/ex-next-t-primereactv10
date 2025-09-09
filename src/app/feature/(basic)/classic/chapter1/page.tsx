@@ -4,7 +4,7 @@ import { PersonFormModel } from '@/models/person';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-function Chapter3() {
+function Chapter1() {
   const [data, setData] = useState<PersonFormModel>({ fname: '', lname: '' });
   const router = useRouter();
 
@@ -14,7 +14,7 @@ function Chapter3() {
       fname: data.fname,
       lname: data.lname,
     });
-    router.push(`/classic/chapter1/result?${params.toString()}`);
+    router.push(`/feature/classic/chapter1/result?${params.toString()}`);
   };
 
   return (
@@ -41,4 +41,4 @@ function Chapter3() {
   );
 }
 
-export default Chapter3;
+export default Chapter1;

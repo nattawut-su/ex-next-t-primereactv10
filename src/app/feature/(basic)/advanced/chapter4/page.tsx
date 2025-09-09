@@ -47,7 +47,7 @@ export default function Page() {
             {u.name}
             <button
               onClick={() => {
-                router.push(`/advanced/chapter4/${u.id}`);
+                router.push(`/feature/advanced/chapter4/${u.id}`);
               }}
             >
               Edit

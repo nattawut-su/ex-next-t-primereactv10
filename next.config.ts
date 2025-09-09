@@ -45,7 +45,7 @@ const nextConfig: NextConfig = {
           "worker-src 'self'",
           "font-src 'self'",
           "script-src 'self'",
-          "connect-src 'self' https://jsonplaceholder.typicode.com",
+          'connect-src *',
         ].join('; ');
     return [
       {

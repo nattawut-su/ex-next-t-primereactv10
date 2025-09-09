@@ -4,7 +4,7 @@ import { PersonFormModel } from '@/models/person';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-function Chapter5() {
+function Chapter4() {
   const [value, setValue] = useState<PersonFormModel>({ fname: '', lname: '' });
   const router = useRouter();
 
@@ -18,7 +18,7 @@ function Chapter5() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     localStorage.setItem('personData', JSON.stringify(value));
-    router.push(`/classic/chapter4/result`);
+    router.push(`/feature/classic/chapter4/result`);
   };
 
   return (
@@ -45,4 +45,4 @@ function Chapter5() {
   );
 }
 
-export default Chapter5;
+export default Chapter4;

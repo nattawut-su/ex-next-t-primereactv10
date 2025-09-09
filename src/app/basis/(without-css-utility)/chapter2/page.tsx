@@ -8,7 +8,7 @@ function Chapter2() {
   const [fullName, setFullName] = useState<string | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault(); // สั่งให้ browser ไม่ reload หน้า เมื่อ submit form
 
     setFullName(data.fname + ' ' + data.lname);
   };

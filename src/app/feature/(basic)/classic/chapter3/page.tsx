@@ -5,7 +5,7 @@ import { usePerson } from '@/layouts/PersonContextLayout';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-function Chapter4() {
+function Chapter3() {
   const [value, setValue] = useState<PersonFormModel>({ fname: '', lname: '' });
   const { setPerson } = usePerson();
   const router = useRouter();
@@ -13,7 +13,7 @@ function Chapter4() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setPerson(value);
-    router.push(`/classic/chapter3/result`);
+    router.push(`/feature/classic/chapter3/result`);
   };
 
   return (
@@ -40,4 +40,4 @@ function Chapter4() {
   );
 }
 
-export default Chapter4;
+export default Chapter3;
