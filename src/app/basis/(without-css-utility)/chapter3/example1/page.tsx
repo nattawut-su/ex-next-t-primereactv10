@@ -21,7 +21,7 @@ export default function PageExample1() {
     const params = new URLSearchParams();
     params.append('fname', data.fname);
     params.append('lname', data.lname);
-    const response = await fetch(`http://localhost:8080/ws-server-rest-jee10/webapi/names?${params.toString()}`);
+    const response = await fetch(`http://localhost:8080/ws-server-rest-jee10/text-result-servlet?${params.toString()}`);
     return await response.text();
   }
 
