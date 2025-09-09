@@ -8,11 +8,12 @@ export default function PageExample3() {
   const [data, setData] = useState<PersonReqModel>({ firstName: '', lastName: '' });
   const [response, setResponse] = useState<PersonRespModel | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault(); // สั่งให้ browser ไม่ reload หน้า เมื่อ submit form
 
-    // callByFetch();
-    callByAxios();
+    // const result = await callByFetch();
+    const result = await callByAxios();
+    setResponse(result);
   };
 
   // ********************** ใช้ fetch API ***********************************
@@ -22,13 +23,13 @@ export default function PageExample3() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
     });
-    const result = await res.json();
-    setResponse(result);
+    return await res.json();
   }
 
   // ********************** ใช้ axios library ***********************************
-  function callByAxios() {
-    axios.post<PersonRespModel>('http://localhost:8080/ws-server-rest-jee10/webapi/names', data).then((response) => setResponse(response.data));
+  async function callByAxios() {
+    const response = await axios.post<PersonRespModel>('http://localhost:8080/ws-server-rest-jee10/webapi/names', data);
+    return response.data;
   }
 
   return (

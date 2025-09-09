@@ -8,33 +8,32 @@ export default function PageExample1() {
   const [data, setData] = useState<PersonFormModel>({ fname: '', lname: '' });
   const [fullName, setFullName] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault(); // สั่งให้ browser ไม่ reload หน้า เมื่อ submit form
 
-    // callByFetch();
-    callByAxios();
+    // const result = await callByFetch();
+    const result = await callByAxios();
+    setFullName(result);
   };
 
   // ********************** ใช้ fetch API ***********************************
-  function callByFetch() {
+  async function callByFetch() {
     const params = new URLSearchParams();
     params.append('fname', data.fname);
     params.append('lname', data.lname);
-    fetch(`http://localhost:8080/ws-server-rest-jee10/text-result-servlet?${params.toString()}`)
-      .then((response) => response.text())
-      .then(setFullName);
+    const response = await fetch(`http://localhost:8080/ws-server-rest-jee10/webapi/names?${params.toString()}`);
+    return await response.text();
   }
 
   // ********************** ใช้ axios library ***********************************
-  function callByAxios() {
-    axios
-      .get<string>('http://localhost:8080/ws-server-rest-jee10/text-result-servlet', {
-        params: {
-          fname: data.fname,
-          lname: data.lname,
-        },
-      })
-      .then((response) => setFullName(response.data));
+  async function callByAxios() {
+    const response = await axios.get<string>('http://localhost:8080/ws-server-rest-jee10/text-result-servlet', {
+      params: {
+        fname: data.fname,
+        lname: data.lname,
+      },
+    });
+    return response.data;
   }
 
   return (
