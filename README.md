@@ -20,7 +20,7 @@ Linux: docker pull node:22-alpine
 > ### Clone Project
 
 ```sh
-git clone https://github.com/nattawut-su/ex-vite-primereactv10.git
+git clone https://github.com/nattawut-su/ex-next-t-primereactv10.git
 ```
 
 - เปลี่ยนไดเรกทอรีไปที่โปรเจกต์
