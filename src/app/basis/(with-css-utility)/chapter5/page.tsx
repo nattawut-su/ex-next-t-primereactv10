@@ -6,7 +6,7 @@ import { Button } from 'primereact/button';
 import { useActionState } from 'react';
 
 export default function Page() {
-  const [state, formAction] = useActionState(submitPerson, { fullName: '' });
+  const [state, formAction] = useActionState(submitPerson, { fullName: '-' });
   return (
     <form action={formAction}>
       <div className="field">
