@@ -8,8 +8,6 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  const value = {
-    locale: 'TH',
-  };
+  const value = {};
   return <PrimeReactProvider value={value}>{children}</PrimeReactProvider>;
 }
