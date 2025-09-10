@@ -12,7 +12,7 @@ export default function Page() {
       <div className="field">
         <label htmlFor="firstName">First Name:</label>
         <InputText
-          id="firstName"
+          id="int_firstName"
           name="firstName"
           className="w-full"
         />
@@ -20,7 +20,7 @@ export default function Page() {
       <div className="field">
         <label htmlFor="lastName">Last Name:</label>
         <InputText
-          id="lastName"
+          id="int_lastName"
           name="lastName"
           className="w-full"
         />
