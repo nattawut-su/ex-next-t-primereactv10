@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { PrimeReactProvider } from 'primereact/api';
+import 'primereact/resources/themes/lara-light-blue/theme.css';
 import '@/assets/css/template.css';
 
 export const metadata: Metadata = {
@@ -7,5 +8,8 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <PrimeReactProvider>{children}</PrimeReactProvider>;
+  const value = {
+    locale: 'TH',
+  };
+  return <PrimeReactProvider value={value}>{children}</PrimeReactProvider>;
 }

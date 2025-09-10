@@ -59,7 +59,7 @@ Open `http://localhost:3000`
 > | ✅ chapter 3 (without-css-utility) | ใช้งาน State และ HTTP REST Client (Java Servlet HTTP - GET) บน client Component | /basis/chapter3/example1 |
 > | ✅ chapter 3 (without-css-utility) | ใช้งาน State และ HTTP REST Client (RESTful API - GET) บน client Component       | /basis/chapter3/example2 |
 > | ✅ chapter 3 (without-css-utility) | ใช้งาน State และ HTTP REST Client (RESTful API - POST) บน client Component      | /basis/chapter3/example3 |
-> | chapter 4 (with-css-utility)       | การใช้ PrimeReact css-utility Components                                        | /basis/chapter4          |
+> | ✅ chapter 4 (with-css-utility)    | การใช้ PrimeReact css-utility Components                                        | /basis/chapter4          |
 
 > | บทเรียนเสริม (classic) | อธิบาย                                                                  | url                                                                               |
 > | ---------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
