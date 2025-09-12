@@ -1,5 +1,5 @@
 'use server';
-import { PersonRespModel } from '@/app/basis/(without-css-utility)/chapter3/PersonReqModel';
+import { PersonRespModel } from '@/app/standard/(without-css-utility)/chapter3/PersonReqModel';
 import axios from 'axios';
 
 export async function submitPerson(prevState: PersonRespModel, formData: FormData): Promise<PersonRespModel> {

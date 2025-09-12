@@ -1,7 +1,7 @@
 'use client';
 
 import { PersonFormModel } from '@/models/person';
-import { PersonRespModel } from '@/app/basis/(without-css-utility)/chapter3/PersonReqModel';
+import { PersonRespModel } from '@/app/standard/(without-css-utility)/chapter3/PersonReqModel';
 import axios from 'axios';
 import { useState } from 'react';
 

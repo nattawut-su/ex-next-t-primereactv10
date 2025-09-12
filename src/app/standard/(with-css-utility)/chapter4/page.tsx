@@ -1,10 +1,12 @@
 'use client';
 
-import { PersonReqModel, PersonRespModel } from '@/app/basis/(without-css-utility)/chapter3/PersonReqModel';
+import { PersonReqModel, PersonRespModel } from '@/app/standard/(without-css-utility)/chapter3/PersonReqModel';
 import axios from 'axios';
+import { Button } from 'primereact/button';
+import { InputText } from 'primereact/inputtext';
 import { useState } from 'react';
 
-export default function PageExample3() {
+export default function PageChapter4() {
   const [data, setData] = useState<PersonReqModel>({ firstName: '', lastName: '' });
   const [response, setResponse] = useState<PersonRespModel | null>(null);
 
@@ -34,27 +36,29 @@ export default function PageExample3() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="fname">First Name:</label>
-        <input
-          type="text"
-          name="firstName"
+      <div className="field">
+        <label htmlFor="firstName">First Name:</label>
+        <InputText
+          id="firstName"
           value={data.firstName}
+          className="w-full"
           onChange={(e) => setData((v) => ({ ...v, firstName: e.target.value }))}
         />
-
-        <br />
+      </div>
+      <div className="field">
         <label htmlFor="lastName">Last Name:</label>
-        <input
-          type="text"
-          name="lastName"
+        <InputText
+          id="lastName"
           value={data.lastName}
+          className="w-full"
           onChange={(e) => setData((v) => ({ ...v, lastName: e.target.value }))}
         />
       </div>
-      <button type="submit">Submit</button>
-
-      <div>
+      <Button
+        type="submit"
+        label="Submit"
+      />
+      <div className="mt-3">
         <b>Result:</b> {response?.fullName}
       </div>
     </form>
