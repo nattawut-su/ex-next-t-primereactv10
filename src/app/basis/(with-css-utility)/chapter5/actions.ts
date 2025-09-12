@@ -1,10 +1,9 @@
 'use server';
-import { PersonRespModel } from '@/models/person';
+import { PersonRespModel } from '@/app/basis/(without-css-utility)/chapter3/PersonReqModel';
 import axios from 'axios';
 
 export async function submitPerson(prevState: PersonRespModel, formData: FormData): Promise<PersonRespModel> {
   console.log('prevState', prevState);
-  // ********************** ใช้ fetch API ***********************************
   // const response = await callByFetch(formData);
   const response = await callByAxios(formData);
   console.log('response', response);
