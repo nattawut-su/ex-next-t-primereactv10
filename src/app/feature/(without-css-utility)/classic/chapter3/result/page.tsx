@@ -1,6 +1,5 @@
 'use client';
-
-import { usePerson } from '@/layouts/PersonContextLayout';
+import usePerson from '@/resources/feature/hooks/usePerson';
 
 export default function ResultPage() {
   const { person } = usePerson();

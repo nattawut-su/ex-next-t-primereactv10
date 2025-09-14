@@ -1,6 +1,6 @@
 'use client';
 import { useReducer, useState } from 'react';
-import PersonModel, { PersonFormModel } from '@/models/person';
+import PersonModel, { PersonFormModel } from '@/resources/feature/models/person';
 
 type State = PersonModel[];
 

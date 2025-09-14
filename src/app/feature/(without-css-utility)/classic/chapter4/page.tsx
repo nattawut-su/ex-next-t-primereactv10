@@ -1,6 +1,6 @@
 'use client';
 
-import { PersonFormModel } from '@/models/person';
+import { PersonFormModel } from '@/resources/feature/models/person';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 

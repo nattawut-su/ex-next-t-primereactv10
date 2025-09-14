@@ -1,11 +1,10 @@
 'use client';
-
-import { PersonFormModel } from '@/models/person';
+import { PersonModel } from '@/resources/standard/models/person';
 import axios from 'axios';
 import { useState } from 'react';
 
 export default function PageExample1() {
-  const [data, setData] = useState<PersonFormModel>({ fname: '', lname: '' });
+  const [data, setData] = useState<PersonModel>({ fname: '', lname: '' });
   const [fullName, setFullName] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {

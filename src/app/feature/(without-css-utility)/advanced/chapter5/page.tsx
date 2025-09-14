@@ -1,7 +1,7 @@
 'use client';
-import PersonModel from '@/models/person';
+import PersonModel from '@/resources/feature/models/person';
 import { useState, useTransition } from 'react';
-import { personApiClient as axiosClient } from '@/lib/api/person/Impl/personApiClient.axios';
+import { personApiClient as axiosClient } from '@/resources/feature/lib/api/person/Impl/personApiClient.axios';
 
 export default function Page() {
   const [query, setQuery] = useState('');

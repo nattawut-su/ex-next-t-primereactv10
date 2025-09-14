@@ -1,9 +1,8 @@
 'use client';
-
-import { PersonFormModel } from '@/models/person';
-import { usePerson } from '@/layouts/PersonContextLayout';
+import { PersonFormModel } from '@/resources/feature/models/person';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import usePerson from '@/resources/feature/hooks/usePerson';
 
 function Chapter3() {
   const [value, setValue] = useState<PersonFormModel>({ fname: '', lname: '' });

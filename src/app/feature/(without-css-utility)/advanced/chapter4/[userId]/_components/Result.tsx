@@ -1,5 +1,5 @@
 'use client';
-import UserModel from '@/models/user.inferface';
+import UserModel from '@/resources/feature/models/user.inferface';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';

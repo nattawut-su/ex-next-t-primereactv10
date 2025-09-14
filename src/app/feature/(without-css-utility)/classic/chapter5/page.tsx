@@ -1,4 +1,4 @@
-import { Hello } from '@/components/hello.component';
+import { Hello } from '@/resources/feature/components/hello.component';
 
 export default function Page() {
   return (

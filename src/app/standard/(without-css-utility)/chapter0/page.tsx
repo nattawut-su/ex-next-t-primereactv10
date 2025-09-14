@@ -1,10 +1,10 @@
 'use client';
 
-import { PersonFormModel } from '@/models/person';
+import { PersonModel } from '@/resources/standard/models/person';
 import { useState } from 'react';
 
 function Chapter1() {
-  const [data] = useState<PersonFormModel>({ fname: 'No', lname: 'Name' });
+  const [data] = useState<PersonModel>({ fname: 'No', lname: 'Name' });
 
   return (
     <div>

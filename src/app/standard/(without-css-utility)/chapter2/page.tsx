@@ -1,10 +1,10 @@
 'use client';
 
-import { PersonFormModel } from '@/models/person';
+import { PersonModel } from '@/resources/standard/models/person';
 import { useState } from 'react';
 
 function Chapter2() {
-  const [data, setData] = useState<PersonFormModel>({ fname: '', lname: '' });
+  const [data, setData] = useState<PersonModel>({ fname: '', lname: '' });
   const [fullName, setFullName] = useState<string | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {

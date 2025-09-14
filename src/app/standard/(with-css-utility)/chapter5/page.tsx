@@ -1,9 +1,9 @@
 'use client';
 
 import { InputText } from 'primereact/inputtext';
-import { submitPerson } from './actions';
 import { Button } from 'primereact/button';
 import { useActionState } from 'react';
+import { submitPerson } from '@/resources/standard/services/chapter5.actions';
 
 export default function Page() {
   const [state, formAction] = useActionState(submitPerson, { fullName: '-' });

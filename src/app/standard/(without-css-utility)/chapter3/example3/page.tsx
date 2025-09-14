@@ -1,6 +1,5 @@
 'use client';
-
-import { PersonReqModel, PersonRespModel } from '@/app/standard/(without-css-utility)/chapter3/PersonReqModel';
+import { PersonReqModel, PersonRespModel } from '@/resources/standard/models/chapter3.PersonModel';
 import axios from 'axios';
 import { useState } from 'react';
 

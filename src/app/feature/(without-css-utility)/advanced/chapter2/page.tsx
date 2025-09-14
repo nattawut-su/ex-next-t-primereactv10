@@ -1,7 +1,7 @@
 'use client';
-import { InputFormCustom } from '@/components/input-form-custom';
-import { userSchema } from '@/lib/validate/user-schema';
-import UserFormModel from '@/models/UserModel';
+import { InputFormCustom } from '@/resources/feature/components/input-form-custom';
+import { userSchema } from '@/resources/feature/lib/validate/user-schema';
+import UserFormModel from '@/resources/feature/models/UserModel';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';

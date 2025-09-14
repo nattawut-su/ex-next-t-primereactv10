@@ -1,5 +1,5 @@
 'use client';
-import PersonModel from '@/models/person';
+import PersonModel from '@/resources/feature/models/person';
 import { useEffect, useState } from 'react';
 
 export default function ResultPage() {

@@ -1,8 +1,8 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { personApiClient as fetchClient } from '@/lib/api/person/Impl/personApiClient.fetch';
-import { personApiClient as axiosClient } from '@/lib/api/person/Impl/personApiClient.axios';
-import PersonModel from '@/models/person';
+import { personApiClient as fetchClient } from '@/resources/feature/lib/api/person/Impl/personApiClient.fetch';
+import { personApiClient as axiosClient } from '@/resources/feature/lib/api/person/Impl/personApiClient.axios';
+import PersonModel from '@/resources/feature/models/person';
 
 export default function Page() {
   const [fetchData, setFetchData] = useState<PersonModel[]>([]);
