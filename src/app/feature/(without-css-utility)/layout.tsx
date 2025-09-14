@@ -1,5 +1,5 @@
-import MocksProvider from '@/resources/feature/bootstrap/MocksProvider';
-import QueryProvider from '@/resources/feature/bootstrap/QCproviders';
+import MocksProvider from '@/resources/feature/contexts/MocksProvider';
+import QueryProvider from '@/resources/feature/contexts/QCproviders';
 import type { Metadata } from 'next';
 import React from 'react';
 

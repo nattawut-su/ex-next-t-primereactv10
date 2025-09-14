@@ -1,6 +1,6 @@
 'use client';
 import { useContext } from 'react';
-import PersonContext from '@/resources/feature/bootstrap/PersonContextProvider';
+import PersonContext from '@/resources/feature/contexts/PersonContextProvider';
 
 export function usePerson() {
   const context = useContext(PersonContext);
