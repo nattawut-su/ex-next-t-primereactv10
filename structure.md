@@ -1,6 +1,6 @@
 # Structure
 
-แนะนำ โครงสร้าง โปรเจกต์ (เฉพาะ src) 2 แบบ
+แนะนำ โครงสร้าง โปรเจกต์ (เฉพาะ src App Router) 2 แบบ
 
 ### Global Standard Structure
 
