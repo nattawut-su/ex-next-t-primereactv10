@@ -124,6 +124,8 @@ export default function PageChapter6() {
               value={data.sex}
               onChange={handleChange}
               options={sexOptions}
+              optionLabel="label"
+              optionValue="value"
               name="sex"
             />
           </div>
