@@ -5,7 +5,7 @@ import { Button } from 'primereact/button';
 import { useActionState } from 'react';
 import { submitPerson } from '@/resources/standard/services/chapter5.actions';
 
-export default function Page() {
+export default function PageChapter5() {
   const [state, formAction] = useActionState(submitPerson, { fullName: '-' });
   return (
     <form action={formAction}>
