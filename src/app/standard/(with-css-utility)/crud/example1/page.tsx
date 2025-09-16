@@ -98,7 +98,7 @@ export default function PageCrudEx1() {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setEmployee((prev) => ({ ...(prev as Partial<EmployeeModel>), [name]: value }));
+    setEmployee((prev) => ({ ...prev, [name]: value }));
   };
 
   return (

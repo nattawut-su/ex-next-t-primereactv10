@@ -34,7 +34,7 @@ export default function PageChapter6() {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement> | DropdownChangeEvent | SelectButtonChangeEvent) => {
     const { name, value } = e.target;
-    setData((prev) => ({ ...(prev as Partial<PersonReqModel>), [name]: value }));
+    setData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
