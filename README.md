@@ -63,7 +63,7 @@ Open `http://localhost:3000`
 > | ✅ chapter 5 (with-css-utility)      | การใช้ server action คู่กับ useActionState เบื่องต้น                                         | /standard/chapter5          |
 > | ✅ chapter 6 (with-css-utility)      | ตัวอย่าง Lab การใช้งาน PrimeReact (เพิ่ม Components อื่นๆ นอกจาก inputText)                  | /standard/chapter6          |
 > | ✅ chapter CRUD (with-css-utility)   | ตัวอย่าง Lab การสร้าง CRUD แบบ เปลี่ยน mode หน้าจอ (PrimeReact แค่ inputText)                | /standard/crud/example1     |
-> | chapter CRUD (with-css-utility)      | ตัวอย่าง Lab การสร้าง CRUD แบบ เปลี่ยน mode หน้าจอ (เพิ่ม Components อื่นๆ นอกจาก inputText) | /standard/crud/example2     |
+> | ✅ chapter CRUD (with-css-utility)   | ตัวอย่าง Lab การสร้าง CRUD แบบ เปลี่ยน mode หน้าจอ (เพิ่ม Components อื่นๆ นอกจาก inputText) | /standard/crud/example2     |
 > | chapter CRUD (with-css-utility)      | ตัวอย่าง Lab การสร้าง CRUD แบบ dialog model (เพิ่ม Components อื่นๆ นอกจาก inputText)        | /standard/crud/example3     |
 
 > | บทเรียนเสริม (classic) | อธิบาย                                                                  | url                                                                               |
