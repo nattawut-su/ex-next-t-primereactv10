@@ -104,7 +104,7 @@ export const CrudModeView: React.FC<CrudProps> = (props) => {
           />
           <Column
             header="Age"
-            body={getAge}
+            body={(rowData) => getAge(rowData).label}
           />
           <Column
             header="actions"

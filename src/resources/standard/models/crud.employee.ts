@@ -7,9 +7,9 @@ export interface EmployeeModel {
 }
 
 export const getAge = (rowData: EmployeeModel) => {
-  if (!rowData.birthDate) return '';
+  if (!rowData.birthDate) return { years: 0, label: '' };
   const birth = new Date(rowData.birthDate);
-  if (isNaN(birth.getTime())) return '';
+  if (isNaN(birth.getTime())) return { years: 0, label: '' };
   const today = new Date();
 
   let years = today.getFullYear() - birth.getFullYear();
@@ -27,5 +27,8 @@ export const getAge = (rowData: EmployeeModel) => {
     years--;
     months += 12;
   }
-  return `${years} ปี ${months} เดือน ${days} วัน`;
+  return {
+    years,
+    label: `${years} ปี ${months} เดือน ${days} วัน`,
+  };
 };

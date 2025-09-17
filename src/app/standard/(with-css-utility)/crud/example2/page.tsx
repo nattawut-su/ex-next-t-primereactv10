@@ -67,7 +67,8 @@ export default function PageCrudEx2() {
     setEmployee((prev) => {
       const updated = { ...prev, [name]: value };
       if (name === 'birthDate') {
-        updated.age = getAge({ ...updated } as EmployeeModel);
+        const { label } = getAge({ ...updated } as EmployeeModel);
+        updated.age = label;
       }
       return updated;
     });
