@@ -12,7 +12,6 @@ import { Button } from 'primereact/button';
 
 export default function PageChapter6() {
   const [data, setData] = useState<Partial<PersonReqModel>>({});
-  const [selectedContact, setSelectedContact] = useState<ContactOption | null>(null);
   const [response, setResponse] = useState<PersonRespModel | null>(null);
 
   const titleOptions: TitleOption[] = [
@@ -32,10 +31,16 @@ export default function PageChapter6() {
     { label: 'e-Mail', value: 'M' },
   ];
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement> | DropdownChangeEvent | SelectButtonChangeEvent) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement> | DropdownChangeEvent | SelectButtonChangeEvent | RadioButtonChangeEvent) => {
     const { name, value } = e.target;
     setData((prev) => ({ ...prev, [name]: value }));
   };
+
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const { name, value } = e.target;
+  //   setData((prev) => ({ ...prev, [name]: value }));
+  // }
+  //onChange={(e: React.ChangeEvent<HTMLInputElement>) => setData((v) => ({ ...v, firstName: e.target.value }))}
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -142,8 +147,8 @@ export default function PageChapter6() {
                       inputId={contact.value}
                       name="contact"
                       value={contact}
-                      onChange={(e: RadioButtonChangeEvent) => setSelectedContact(e.value)}
-                      checked={selectedContact?.value === contact.value}
+                      onChange={handleChange}
+                      checked={data?.contact === contact.value}
                     />
                     <label
                       htmlFor={contact.value}
@@ -169,7 +174,7 @@ export default function PageChapter6() {
               name="email"
               value={data.email ?? ''}
               onChange={handleChange}
-              disabled={selectedContact?.value !== 'M'}
+              disabled={data?.contact !== 'M'}
             />
           </div>
 
@@ -185,7 +190,7 @@ export default function PageChapter6() {
               name="phone"
               value={data.phone ?? ''}
               onChange={handleChange}
-              disabled={selectedContact?.value !== 'P'}
+              disabled={data?.contact !== 'P'}
             />
           </div>
 

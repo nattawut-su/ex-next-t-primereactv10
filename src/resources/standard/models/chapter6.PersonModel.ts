@@ -3,6 +3,7 @@ export interface PersonReqModel {
   lastName: string;
   title: string;
   sex: string;
+  contact: 'M' | 'P';
   email: string;
   phone: string;
 }

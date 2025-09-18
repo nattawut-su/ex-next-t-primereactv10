@@ -42,7 +42,7 @@ export default function PageCrudEx1() {
     // fetchData();
   }, []);
 
-  function actionBodyTemplate(rowData: EmployeeModel) {
+  function actionBodyComponents(rowData: EmployeeModel) {
     return (
       <>
         <Button
@@ -119,16 +119,16 @@ export default function PageCrudEx1() {
           <div className="col-12">
             <DataTable value={employees}>
               <Column
-                field="firstName"
                 header="First Name"
+                field="firstName"
               />
               <Column
-                field="lastName"
                 header="Last Name"
+                field="lastName"
               />
               <Column
                 header="actions"
-                body={actionBodyTemplate}
+                body={actionBodyComponents}
               />
             </DataTable>
           </div>
